@@ -1,0 +1,10 @@
+PushTopic pushTopic = new PushTopic();
+pushTopic.Name = 'LastChangedAccount';
+pushTopic.Query = 'SELECT Id, Name FROM Account';
+pushTopic.ApiVersion = 48.0;
+pushTopic.NotifyForOperationCreate = true;
+pushTopic.NotifyForOperationUpdate = true;
+pushTopic.NotifyForOperationUndelete = true;
+pushTopic.NotifyForOperationDelete = true;
+pushTopic.NotifyForFields = 'Referenced';
+insert pushTopic;
